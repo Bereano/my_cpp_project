@@ -1,10 +1,12 @@
-/*
- * main.cpp
- *
- *  Created on: 27 giu 2018
- *      Author: ae25711
+/**
+ * @Author: Manuel G.
+ * @Date: 13/06/2018
  */
 
 
+// Main
+int main() {
 
 
+	return 0;
+}
