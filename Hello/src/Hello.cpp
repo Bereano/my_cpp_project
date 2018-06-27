@@ -7,9 +7,10 @@
 ============================================================================*/
 
 #include <iostream>
+#include <Exception>
 #include "../Header/include/Dog.h"
 
-using namespace std;
+using std;
 
 /**
  * Main
