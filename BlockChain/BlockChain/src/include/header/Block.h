@@ -34,10 +34,17 @@ public:
 	 */
 	virtual void addTransaction(Transaction transaction);
 
-	/**
-	 * Distruttore
-	 */
-	virtual ~Block();
+	virtual void setPreviousHash(string previousHash);
+
+	virtual void setHash(string hash);
+
+	virtual void setIndex(int index);
+
+	virtual void setNonce(int nonce);
+
+	virtual string getHash();
+
+	virtual int getNonce();
 
 private:
 

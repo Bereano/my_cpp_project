@@ -15,9 +15,11 @@ class Transaction {
 
 public:
 
+	Transaction();
+
 	Transaction(string from, string to, int amount);
 
-	virtual ~Transaction();
+	virtual string toString();
 
 private:
 

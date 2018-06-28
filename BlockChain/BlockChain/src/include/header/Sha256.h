@@ -57,6 +57,4 @@ std::string sha256(std::string input);
            | ((uint32) *((str) + 1) << 16)    \
            | ((uint32) *((str) + 0) << 24);   \
 }
-#endif
-
 #endif /* SRC_INCLUDE_HEADER_SHA256_H_ */
