@@ -10,7 +10,7 @@
 #include <Exception>
 #include "../Header/include/Dog.h"
 
-using std;
+using namespace std;
 
 /**
  * Main

@@ -15,10 +15,23 @@ class Transaction {
 
 public:
 
+	/**
+	 * @brief Costruttore
+	 */
 	Transaction();
 
+	/**
+	 * @brief Construttore
+	 * @param From
+	 * @param To
+	 * @param Amount
+	 */
 	Transaction(string from, string to, int amount);
 
+	/**
+	 * @brief Concatena le stringe degli attributi dell'istanza in un'unica stringa,
+	 * @result from + to + amount
+	 */
 	virtual string toString();
 
 private:

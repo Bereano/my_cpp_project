@@ -12,6 +12,9 @@
 
 using namespace std;
 
+const string Blockchain::HASH_PREFIX = "000";
+const string Blockchain::GENESIS_HASH_PREVIOUS_BLOCK = "0000000000000000";
+
 Blockchain::Blockchain(Block genesisBlock) {
 	this->blocks.push_back(genesisBlock);
 }
@@ -19,7 +22,7 @@ Blockchain::Blockchain(Block genesisBlock) {
 void Blockchain::addBlock(Block block) {
 
     if(this->blocks.size() == 0) {
-      block.setPreviousHash("0000000000000000");
+      block.setPreviousHash(Blockchain::GENESIS_HASH_PREVIOUS_BLOCK);
       block.setHash(this->generateHash(block));
     }
 
@@ -49,7 +52,7 @@ string Blockchain::generateHash(Block block) {
 
     string hash = sha256(block.getKey());
 
-    while(hash.substr(0, 3) != "000") {
+    while(hash.substr(0, 3) != Blockchain::HASH_PREFIX) {
       block.setNonce(block.getNonce() + 1);
       hash = sha256(block.getKey());
 

@@ -1,0 +1,120 @@
+\hypertarget{class_block}{}\section{Block Class Reference}
+\label{class_block}\index{Block@{Block}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual string \mbox{\hyperlink{class_block_ab2a9d794f7f9ee273c5dafe349dfc8ef}{get\+Key}} ()
+\begin{DoxyCompactList}\small\item\em Restituisce la \char`\"{}chiave\char`\"{} del Blocco. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_block_aceac7c0fb82807837b429bc004418cc2}\label{class_block_aceac7c0fb82807837b429bc004418cc2}} 
+virtual void \mbox{\hyperlink{class_block_aceac7c0fb82807837b429bc004418cc2}{add\+Transaction}} (\mbox{\hyperlink{class_transaction}{Transaction}} transaction)
+\begin{DoxyCompactList}\small\item\em Accoda una nuova transazione al Blocco.  Oggetto \char`\"{}\+Transaction\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_block_ae3fbc8bbaaa3eb6fa252dc321a2a4119}\label{class_block_ae3fbc8bbaaa3eb6fa252dc321a2a4119}} 
+virtual void \mbox{\hyperlink{class_block_ae3fbc8bbaaa3eb6fa252dc321a2a4119}{set\+Previous\+Hash}} (string previous\+Hash)
+\begin{DoxyCompactList}\small\item\em Valorizza l\textquotesingle{}attributo del puntatore(\+Hash) all\textquotesingle{}oggetto \mbox{\hyperlink{class_block}{Block}} precedente.  Hash dell\textquotesingle{}oggetto \mbox{\hyperlink{class_block}{Block}} precedente. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_block_a156d082db99981b4710e00bec0ce7a59}{set\+Hash}} (string hash)
+\begin{DoxyCompactList}\small\item\em Valorizza l\textquotesingle{}attributo \char`\"{}\+Hash\char`\"{} del Blocco. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_block_a08fb67d8f1908100a324601d4c185b54}{set\+Index}} (int index)
+\begin{DoxyCompactList}\small\item\em Valorizza l\textquotesingle{}attributo \char`\"{}\+Index\char`\"{} del Blocco. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_block_afe8d6e723262945cd8d2fd5316afda06}{set\+Nonce}} (int nonce)
+\begin{DoxyCompactList}\small\item\em Valorizza l\textquotesingle{}attributo \char`\"{}\+Nonce\char`\"{} del Blocco. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_block_ab33d385c1a9abc82dcdd4e0b9d4cf34c}{get\+Hash}} ()
+\begin{DoxyCompactList}\small\item\em Restituisce Hash del Blocco. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_block_a3852419958b657cf9e119fb537d01609}{get\+Nonce}} ()
+\begin{DoxyCompactList}\small\item\em Restituisce \char`\"{}\+Nonce\char`\"{} del Blocco. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_block_ab33d385c1a9abc82dcdd4e0b9d4cf34c}\label{class_block_ab33d385c1a9abc82dcdd4e0b9d4cf34c}} 
+\index{Block@{Block}!get\+Hash@{get\+Hash}}
+\index{get\+Hash@{get\+Hash}!Block@{Block}}
+\subsubsection{\texorpdfstring{get\+Hash()}{getHash()}}
+{\footnotesize\ttfamily string Block\+::get\+Hash (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Restituisce Hash del Blocco. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Hash} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_block_ab2a9d794f7f9ee273c5dafe349dfc8ef}\label{class_block_ab2a9d794f7f9ee273c5dafe349dfc8ef}} 
+\index{Block@{Block}!get\+Key@{get\+Key}}
+\index{get\+Key@{get\+Key}!Block@{Block}}
+\subsubsection{\texorpdfstring{get\+Key()}{getKey()}}
+{\footnotesize\ttfamily string Block\+::get\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Restituisce la \char`\"{}chiave\char`\"{} del Blocco. 
+
+\begin{DoxyReturn}{Returns}
+Hash 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_block_a3852419958b657cf9e119fb537d01609}\label{class_block_a3852419958b657cf9e119fb537d01609}} 
+\index{Block@{Block}!get\+Nonce@{get\+Nonce}}
+\index{get\+Nonce@{get\+Nonce}!Block@{Block}}
+\subsubsection{\texorpdfstring{get\+Nonce()}{getNonce()}}
+{\footnotesize\ttfamily int Block\+::get\+Nonce (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Restituisce \char`\"{}\+Nonce\char`\"{} del Blocco. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Nonce} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_block_a156d082db99981b4710e00bec0ce7a59}\label{class_block_a156d082db99981b4710e00bec0ce7a59}} 
+\index{Block@{Block}!set\+Hash@{set\+Hash}}
+\index{set\+Hash@{set\+Hash}!Block@{Block}}
+\subsubsection{\texorpdfstring{set\+Hash()}{setHash()}}
+{\footnotesize\ttfamily void Block\+::set\+Hash (\begin{DoxyParamCaption}\item[{string}]{hash }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Valorizza l\textquotesingle{}attributo \char`\"{}\+Hash\char`\"{} del Blocco. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Hash} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_block_a08fb67d8f1908100a324601d4c185b54}\label{class_block_a08fb67d8f1908100a324601d4c185b54}} 
+\index{Block@{Block}!set\+Index@{set\+Index}}
+\index{set\+Index@{set\+Index}!Block@{Block}}
+\subsubsection{\texorpdfstring{set\+Index()}{setIndex()}}
+{\footnotesize\ttfamily void Block\+::set\+Index (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Valorizza l\textquotesingle{}attributo \char`\"{}\+Index\char`\"{} del Blocco. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_block_afe8d6e723262945cd8d2fd5316afda06}\label{class_block_afe8d6e723262945cd8d2fd5316afda06}} 
+\index{Block@{Block}!set\+Nonce@{set\+Nonce}}
+\index{set\+Nonce@{set\+Nonce}!Block@{Block}}
+\subsubsection{\texorpdfstring{set\+Nonce()}{setNonce()}}
+{\footnotesize\ttfamily void Block\+::set\+Nonce (\begin{DoxyParamCaption}\item[{int}]{nonce }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Valorizza l\textquotesingle{}attributo \char`\"{}\+Nonce\char`\"{} del Blocco. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Nonce} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ae25711.\+E\+N\+E\+L\+I\+N\+T/git/my\+\_\+cpp\+\_\+project/\+Block\+Chain/\+Block\+Chain/src/include/header/Block.\+h\item 
+C\+:/\+Users/ae25711.\+E\+N\+E\+L\+I\+N\+T/git/my\+\_\+cpp\+\_\+project/\+Block\+Chain/\+Block\+Chain/src/Block.\+cpp\end{DoxyCompactItemize}

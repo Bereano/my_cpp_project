@@ -1,0 +1,106 @@
+\hypertarget{class_blockchain}{}\section{Blockchain Class Reference}
+\label{class_blockchain}\index{Blockchain@{Blockchain}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_blockchain_a5b9d680a89243c663391801caec5d961}{Blockchain}} (\mbox{\hyperlink{class_block}{Block}} genesis\+Block)
+\begin{DoxyCompactList}\small\item\em Costruttore \mbox{\hyperlink{class_blockchain}{Blockchain}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_blockchain_ace37b5ceb8fecfbcca98203a50f7cc7b}{add\+Block}} (\mbox{\hyperlink{class_block}{Block}} block)
+\begin{DoxyCompactList}\small\item\em Aggiunge Blocco alla \mbox{\hyperlink{class_blockchain}{Blockchain}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_block}{Block}} \mbox{\hyperlink{class_blockchain_ab354aa0a5e51a564c817255b0ddc3419}{get\+Next\+Block}} (vector$<$ \mbox{\hyperlink{class_transaction}{Transaction}} $>$ transactions)
+\begin{DoxyCompactList}\small\item\em Crea nuovo blocco. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_block}{Block}} \mbox{\hyperlink{class_blockchain_ad283b392e91aee3d33e46199b33aa9a1}{get\+Previous\+Block}} ()
+\begin{DoxyCompactList}\small\item\em Restituisce Blocco precedente. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_blockchain_ac205005ce824cb95db61f8e51fa4370d}{generate\+Hash}} (\mbox{\hyperlink{class_block}{Block}} block)
+\begin{DoxyCompactList}\small\item\em Genera Hash in base al Blocco passato in input. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_blockchain_a5b9d680a89243c663391801caec5d961}\label{class_blockchain_a5b9d680a89243c663391801caec5d961}} 
+\index{Blockchain@{Blockchain}!Blockchain@{Blockchain}}
+\index{Blockchain@{Blockchain}!Blockchain@{Blockchain}}
+\subsubsection{\texorpdfstring{Blockchain()}{Blockchain()}}
+{\footnotesize\ttfamily Blockchain\+::\+Blockchain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_block}{Block}}}]{genesis\+Block }\end{DoxyParamCaption})}
+
+
+
+Costruttore \mbox{\hyperlink{class_blockchain}{Blockchain}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em genesis\+Block} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_blockchain_ace37b5ceb8fecfbcca98203a50f7cc7b}\label{class_blockchain_ace37b5ceb8fecfbcca98203a50f7cc7b}} 
+\index{Blockchain@{Blockchain}!add\+Block@{add\+Block}}
+\index{add\+Block@{add\+Block}!Blockchain@{Blockchain}}
+\subsubsection{\texorpdfstring{add\+Block()}{addBlock()}}
+{\footnotesize\ttfamily void Blockchain\+::add\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_block}{Block}}}]{block }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Aggiunge Blocco alla \mbox{\hyperlink{class_blockchain}{Blockchain}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Blocco} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_blockchain_ac205005ce824cb95db61f8e51fa4370d}\label{class_blockchain_ac205005ce824cb95db61f8e51fa4370d}} 
+\index{Blockchain@{Blockchain}!generate\+Hash@{generate\+Hash}}
+\index{generate\+Hash@{generate\+Hash}!Blockchain@{Blockchain}}
+\subsubsection{\texorpdfstring{generate\+Hash()}{generateHash()}}
+{\footnotesize\ttfamily string Blockchain\+::generate\+Hash (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_block}{Block}}}]{block }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Genera Hash in base al Blocco passato in input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Blocco} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Hash 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_blockchain_ab354aa0a5e51a564c817255b0ddc3419}\label{class_blockchain_ab354aa0a5e51a564c817255b0ddc3419}} 
+\index{Blockchain@{Blockchain}!get\+Next\+Block@{get\+Next\+Block}}
+\index{get\+Next\+Block@{get\+Next\+Block}!Blockchain@{Blockchain}}
+\subsubsection{\texorpdfstring{get\+Next\+Block()}{getNextBlock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_block}{Block}} Blockchain\+::get\+Next\+Block (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_transaction}{Transaction}} $>$}]{transactions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Crea nuovo blocco. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Vettore} & di Transazioni \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nuovo Blocco 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_blockchain_ad283b392e91aee3d33e46199b33aa9a1}\label{class_blockchain_ad283b392e91aee3d33e46199b33aa9a1}} 
+\index{Blockchain@{Blockchain}!get\+Previous\+Block@{get\+Previous\+Block}}
+\index{get\+Previous\+Block@{get\+Previous\+Block}!Blockchain@{Blockchain}}
+\subsubsection{\texorpdfstring{get\+Previous\+Block()}{getPreviousBlock()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_block}{Block}} Blockchain\+::get\+Previous\+Block (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Restituisce Blocco precedente. 
+
+\begin{DoxyReturn}{Returns}
+Blocco precedente 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ae25711.\+E\+N\+E\+L\+I\+N\+T/git/my\+\_\+cpp\+\_\+project/\+Block\+Chain/\+Block\+Chain/src/include/header/Blockchain.\+h\item 
+C\+:/\+Users/ae25711.\+E\+N\+E\+L\+I\+N\+T/git/my\+\_\+cpp\+\_\+project/\+Block\+Chain/\+Block\+Chain/src/Blockchain.\+cpp\end{DoxyCompactItemize}

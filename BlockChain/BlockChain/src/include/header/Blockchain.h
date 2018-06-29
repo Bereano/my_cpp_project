@@ -13,11 +13,43 @@
 
 class Blockchain {
 
+protected:
+	const static string HASH_PREFIX;
+
 public:
+
+	const static string GENESIS_HASH_PREVIOUS_BLOCK;
+
+	/**
+	 * @brief Costruttore Blockchain
+	 * @param genesisBlock
+	 */
 	Blockchain(Block genesisBlock);
+
+	/**
+	 * @brief Aggiunge Blocco alla Blockchain.
+	 * @param Blocco
+	 */
 	virtual void addBlock(Block block);
+
+	/**
+	 * @brief Crea nuovo blocco.
+	 * @param Vettore di Transazioni
+	 * @result Nuovo Blocco
+	 */
 	virtual Block getNextBlock(vector<Transaction> transactions);
+
+	/**
+	 * @brief Restituisce Blocco precedente.
+	 * @result Blocco precedente
+	 */
 	virtual Block getPreviousBlock();
+
+	/**
+	 * @brief Genera Hash in base al Blocco passato in input.
+	 * @param Blocco
+	 * @result Hash
+	 */
 	virtual string generateHash(Block block);
 
 private:
